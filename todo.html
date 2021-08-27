@@ -1,0 +1,43 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Jose's Todo App</title>
+  </head>
+  <body>
+    <button>Press me</button>
+
+    <!--============ START OF JAVA SCRIPT ================-->
+    <script>
+      let todos = ["Get groceries", "Wash car", "Make dinner"];
+      todos.push("another todo");
+
+      todos.forEach(function (todoTitle) {
+        let element = document.createElement("div");
+        element.innerText = todoTitle;
+        document.body.appendChild(element);
+      });
+
+      /************** Exercises 5 ************************/
+      /*
+    // 1. Use Javascript to add a <button> containing the
+    // text "Click Me" inside the button
+    element = document.createElement('button');
+    element.innerText = 'Click Me';
+    document.body.appendChild(element);
+
+    // 2. Use Javascript to change the title of the webpage
+    // that shows up in the tabs (use Google to find the
+    // code for doing this)
+    document.title = 'My New Page Title';
+
+    // 3. Reverse the order of the three todo items on the
+    // webpage by re-arranging the Javascript code. Notice
+    // how instructions are run one by one and elements are
+    // also created one by one
+    */
+    </script>
+    <!--============ END OF JAVA SCRIPT ================-->
+  </body>
+</html>
